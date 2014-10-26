@@ -8,8 +8,8 @@ from settings import Settings
 
 
 reviews_collection = MongoClient(Settings.MONGO_CONNECTION_STRING)[Settings.HAMSHAHRI_DATABASE][
-    Settings.REVIEWS_COLLECTION]
-tags_collection = MongoClient(Settings.MONGO_CONNECTION_STRING)[Settings.TAGS_DATABASE][Settings.REVIEWS_COLLECTION]
+    Settings.HAMSHAHRI_COLLECTION]
+tags_collection = MongoClient(Settings.MONGO_CONNECTION_STRING)[Settings.TAGS_DATABASE][Settings.HAMSHAHRI_COLLECTION]
 
 reviews_cursor = reviews_collection.find()
 reviewsCount = reviews_cursor.count()

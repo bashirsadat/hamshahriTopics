@@ -6,5 +6,5 @@ class Settings:
     MONGO_CONNECTION_STRING = "mongodb://localhost"
     HAMSHAHRI_DATABASE = "Dataset_Challenge_Reviews"
     TAGS_DATABASE = "Tags"
-    REVIEWS_COLLECTION = "Reviews"
+    HAMSHAHRI_COLLECTION = "Reviews"
     CORPUS_COLLECTION = "Corpus"

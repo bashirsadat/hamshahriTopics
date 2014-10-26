@@ -7,7 +7,7 @@ from nltk.stem.wordnet import WordNetLemmatizer
 from settings import Settings
 
 
-tags_collection = MongoClient(Settings.MONGO_CONNECTION_STRING)[Settings.TAGS_DATABASE][Settings.REVIEWS_COLLECTION]
+tags_collection = MongoClient(Settings.MONGO_CONNECTION_STRING)[Settings.TAGS_DATABASE][Settings.HAMSHAHRI_COLLECTION]
 corpus_collection = MongoClient(Settings.MONGO_CONNECTION_STRING)[Settings.TAGS_DATABASE][Settings.CORPUS_COLLECTION]
 
 reviews_cursor = tags_collection.find()
